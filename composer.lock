@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b488f4605ceb8de57a2cad8b1e25a844",
+    "content-hash": "32800b22053928c4d377be6a80670915",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -127,6 +127,48 @@
                 }
             ],
             "time": "2016-06-13T19:28:20+00:00"
+        },
+        {
+            "name": "caouecs/laravel-lang",
+            "version": "3.0.50",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caouecs/Laravel-lang.git",
+                "reference": "0e69b5e23ae6f2cc9af337c95cae579a105b1d53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caouecs/Laravel-lang/zipball/0e69b5e23ae6f2cc9af337c95cae579a105b1d53",
+                "reference": "0e69b5e23ae6f2cc9af337c95cae579a105b1d53",
+                "shasum": ""
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.10"
+            },
+            "suggest": {
+                "ablunier/laravel-lang-installer": "Command for easily add languages to a Laravel project",
+                "arcanedev/laravel-lang": "Translations manager and checker for Laravel 5",
+                "overtrue/laravel-lang": "Command to add languages in your project"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "caouecs",
+                    "email": "caouecs@caouecs.net"
+                }
+            ],
+            "description": "Languages for Laravel",
+            "keywords": [
+                "lang",
+                "languages",
+                "laravel",
+                "lpm"
+            ],
+            "time": "2018-06-23T14:49:42+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
