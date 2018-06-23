@@ -20,7 +20,6 @@ class CreateTeachersTable extends Migration
             $table->string('tite')->nullable();
             $table->text('biography')->nullable();
             $table->string('website_url')->nullable();
-
             $table->timestamps();
         });
     }
