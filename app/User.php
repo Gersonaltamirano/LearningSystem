@@ -44,4 +44,8 @@ class User extends Authenticatable
     public function teacher(){
         return $this->hasOne(Teacher::class);
     }
+
+    public function socialAcount(){
+        return $this->hasOne(UserSocialAccount::class);
+    }
 }
