@@ -11,5 +11,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Student extends Model
 {
-    //
+    public function Courses () {
+        return $this->belongsToMany(Course::class);
+    }
 }
