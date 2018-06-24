@@ -16,6 +16,6 @@ class Student extends Model
     }
 
     public function user (){
-        return $this->belongsTo(User::class)->select('id', 'role_id', 'name', 'emaoil');
+        return $this->belongsTo(User::class)->select('id', 'role_id', 'name', 'email');
     }
 }

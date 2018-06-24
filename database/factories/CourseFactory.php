@@ -12,7 +12,7 @@ $factory->define(App\Course::class, function (Faker $faker) {
 
     return [
         'teacher_id' => \App\Teacher::all()->random()->id,
-        'categoy_id' => \App\Category::all()->random()->id,
+        'category_id' => \App\Category::all()->random()->id,
         'level_id' => \App\Level::all()->random()->id,
         'name' => $name,
         'slug' => str_slug($name, '-' ),
