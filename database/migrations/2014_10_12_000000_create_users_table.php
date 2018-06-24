@@ -16,7 +16,7 @@ class CreateUsersTable extends Migration
         Schema::create('roles', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->comment('Nombre del rol de usuario');
-            $table->text('descripcion');
+            $table->text('description');
             $table->timestamps();
             $table->softDeletes();
         });
@@ -26,8 +26,10 @@ class CreateUsersTable extends Migration
             $table->unsignedInteger('role_id')->default(\App\Role::STUDENT);
             $table->foreign('role_id')->references('id')->on('roles');
             $table->string('name');
+            $table->string('last_name');
             $table->string('email')->unique();
             $table->string('password');
+            $table->string('slug');
             $table->string('picture')->nullable();
 
             //cashier columns
